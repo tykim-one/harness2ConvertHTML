@@ -1,0 +1,20 @@
+# Context Snapshot
+- task statement: Re-run the direct HWP-to-HTML implementation using the programmatic OMX team runtime.
+- desired outcome: Produce the first repo-managed direct HWP extraction artifact, first IR, and an IR-driven HTML generation path for `260121 일일 주요경제지표.hwp`.
+- known facts/evidence:
+  - final target is HWP -> IR -> editable HTML, not reference-copy reuse
+  - `today_major_economy/` is the oracle/reference target
+  - `.venv-pyhwp` exists and `hwp5proc xml '260121 일일 주요경제지표.hwp'` succeeds locally
+  - detached CLI `$team` runs were unstable; programmatic OMX team runtime is the safer path here
+  - latest truthful harness baseline run is `harness/artifacts/260121-major-economy/runs/20260322T074054Z`
+- constraints:
+  - keep scope to the sample HWP only
+  - preserve editability, binding structure, runtime contract verification, and run artifact reporting
+  - keep diffs tight and reversible
+  - minimum acceptable midpoint is repo-managed extraction artifact + IR + renderer entrypoint stub wired into the pipeline
+- likely codebase touchpoints:
+  - `.venv-pyhwp/`
+  - `260121 일일 주요경제지표.hwp`
+  - `scripts/`
+  - `harness/`
+  - `today_major_economy/`

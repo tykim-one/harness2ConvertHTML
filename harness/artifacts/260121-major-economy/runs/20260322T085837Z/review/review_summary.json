@@ -1,0 +1,23 @@
+{
+  "run_id": "20260322T085837Z",
+  "review_status": "conversion-only / review-blocked",
+  "capture_assets_found": false,
+  "pipeline_passed": true,
+  "acceptance_ready": false,
+  "runtime_contract_passed": true,
+  "reference_immutable": true,
+  "direct_extraction_ready": true,
+  "ir_ready": true,
+  "direct_outputs": {
+    "extracted_xml": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/metadata/extracted_hwp.xml",
+    "ir": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/metadata/extracted_hwp_ir.json",
+    "preview_html": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/generated/direct_hwp_extraction_preview.html",
+    "preview_payload": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/generated/direct_hwp_extraction_preview.json"
+  },
+  "paths": {
+    "source": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/source",
+    "reference": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/reference",
+    "generated": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/generated",
+    "metadata": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/metadata"
+  }
+}

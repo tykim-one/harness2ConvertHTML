@@ -1,0 +1,20 @@
+{
+  "active": true,
+  "current_phase": "deep-interview",
+  "started_at": "2026-03-21T00:00:00Z",
+  "interview_id": "di-convert-html-harness-20260321",
+  "type": "brownfield",
+  "initial_idea": "HWP/DOCS/PDF 등 문서를 Editable HTML로 변환하는 에이전트 및 하네스 구성. 원본 UI와 싱크를 최대한 맞추기 위해 원본 파일 캡쳐 후 캡쳐본+원본을 레퍼런스로 HTML 변환.",
+  "rounds": "[]",
+  "current_ambiguity": "1.0",
+  "threshold": "0.2",
+  "codebase_context": "Brownfield: today_major_economy/ contains reference output (HTML 13K lines, common.css 1416 lines, fidelity_fit CSS 357 lines, tokens.json, extracted_fields.json with 816+ semantic blocks, 13 WOFF2 fonts). Original HWP file present. No source code/agent logic exists yet.",
+  "challenge_modes_used": "[]",
+  "ontology_snapshots": "[]",
+  "_meta": {
+    "mode": "deep-interview",
+    "sessionId": null,
+    "updatedAt": "2026-03-20T17:55:33.813Z",
+    "updatedBy": "state_write_tool"
+  }
+}

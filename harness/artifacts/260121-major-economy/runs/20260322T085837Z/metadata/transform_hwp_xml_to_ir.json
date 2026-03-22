@@ -1,0 +1,9 @@
+{
+  "ir_path": "harness/artifacts/260121-major-economy/runs/20260322T085837Z/metadata/extracted_hwp_ir.json",
+  "schema_path": "harness/samples/260121-major-economy/hwp_ir.schema.json",
+  "paragraph_count": 888,
+  "table_count": 13,
+  "reference_field_values_matched": 817,
+  "reference_field_total": 817,
+  "unmatched_field_preview": []
+}

@@ -1,0 +1,16 @@
+{
+  "generated_dir": "harness/artifacts/260121-major-economy/runs/20260322T084858Z/generated",
+  "generated_html": "harness/artifacts/260121-major-economy/runs/20260322T084858Z/generated/daily_economic_indicators_fidelity_fit_headerfix.html",
+  "generated_payload": "harness/artifacts/260121-major-economy/runs/20260322T084858Z/generated/generated_payload.json",
+  "generated_state_seed": "harness/artifacts/260121-major-economy/runs/20260322T084858Z/generated/generated_state_seed.json",
+  "font_aliases": [
+    {
+      "target": "assets/fonts/HumanMyeongjo.woff2",
+      "fallback_source": "assets/fonts/HanyangMyeongjo.woff2"
+    },
+    {
+      "target": "assets/fonts/HCIPoppy.woff2",
+      "fallback_source": "assets/fonts/HYHeadLineM.woff2"
+    }
+  ]
+}

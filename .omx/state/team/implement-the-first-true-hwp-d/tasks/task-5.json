@@ -1,0 +1,11 @@
+{
+  "subject": "the harness must remain the evaluation loop. Required outcomes: add a stable ext",
+  "description": "the harness must remain the evaluation loop. Required outcomes: add a stable extraction wrapper that runs pyhwp/hwp5proc from the pipeline",
+  "status": "pending",
+  "owner": "worker-1",
+  "role": "team-executor",
+  "id": "5",
+  "depends_on": [],
+  "version": 1,
+  "created_at": "2026-03-22T08:36:50.918Z"
+}

@@ -1,0 +1,24 @@
+# Context Snapshot
+- task statement: Implement the first real extraction wrapper for `260121 일일 주요경제지표.hwp` now that pyhwp/hwp5proc is installed and parsing works.
+- desired outcome: Add a stable intermediate extraction artifact and first IR/schema so the pipeline can move from direct HWP parsing toward IR-driven rendering.
+- known facts/evidence:
+  - `pyhwp` and dependencies are installed in `.venv-pyhwp`
+  - `hwp5proc xml '260121 일일 주요경제지표.hwp'` succeeds and produces XML output (~1.3 MB) despite repeated underline-style warnings
+  - final target remains direct HWP extraction
+  - `today_major_economy/` is the oracle/reference target
+  - current harness baseline exists and latest truthful baseline run is `harness/artifacts/260121-major-economy/runs/20260322T074054Z`
+- constraints:
+  - keep scope to the sample HWP only
+  - do not widen into generic multi-format support
+  - preserve editability/binding goals in the IR design
+  - keep diffs tight and reversible
+  - report exact blockers if pyhwp XML/model output lacks required structure for the sample
+- unknowns/open questions:
+  - whether XML-only output is sufficient or whether `models --json` is needed for the first IR milestone
+  - how much of the oracle semantic labeling can be inferred automatically versus mapped later
+- likely codebase touchpoints:
+  - `.venv-pyhwp/`
+  - `260121 일일 주요경제지표.hwp`
+  - `scripts/`
+  - `harness/`
+  - `today_major_economy/`

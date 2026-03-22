@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "required_hooks": {
+    "window.DailyIndicatorsTemplate": true,
+    "window.applyDailyIndicatorsData": true,
+    ".editable-block": true,
+    "data-semantic-field": true,
+    "data-table-field": true,
+    "data-table-id": true,
+    "data-cell-key": true,
+    "#runtime-font-faces": true,
+    "collectState": true
+  },
+  "unresolved_mappings": [],
+  "state_shape_ok": true,
+  "missing_fonts": [],
+  "capture_gate_ok": true,
+  "generated_html": "harness/artifacts/260121-major-economy/runs/20260322T071228Z/generated/daily_economic_indicators_fidelity_fit_headerfix.html"
+}

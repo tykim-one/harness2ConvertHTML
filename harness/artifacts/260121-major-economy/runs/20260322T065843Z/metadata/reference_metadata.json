@@ -1,0 +1,136 @@
+{
+  "reference_dir": "harness/artifacts/260121-major-economy/runs/20260322T065843Z/reference",
+  "linked_css": [
+    "daily_economic_indicators_common.css",
+    "daily_economic_indicators_fidelity_fit_headerfix.css"
+  ],
+  "font_faces": [
+    {
+      "family": "함초롬바탕",
+      "url": "assets/fonts/HCRBatang.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "함초롬돋움",
+      "url": "assets/fonts/HCRDotum.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "한컴바탕",
+      "url": "assets/fonts/HancomBatang.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "HY헤드라인M",
+      "url": "assets/fonts/HYHeadLineM.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "맑은 고딕",
+      "url": "assets/fonts/MalgunGothic.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "Malgun Gothic",
+      "url": "assets/fonts/MalgunGothic.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "굴림",
+      "url": "assets/fonts/Gulim.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "굴림체",
+      "url": "assets/fonts/GulimChe.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "궁서",
+      "url": "assets/fonts/Gungsuh.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "명조",
+      "url": "assets/fonts/Myeongjo.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "바탕",
+      "url": "assets/fonts/Batang.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "한양신명조",
+      "url": "assets/fonts/HanyangMyeongjo.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "휴먼명조",
+      "url": "assets/fonts/HumanMyeongjo.woff2",
+      "format": "woff2",
+      "exists": false
+    },
+    {
+      "family": "HCI Poppy",
+      "url": "assets/fonts/HCIPoppy.woff2",
+      "format": "woff2",
+      "exists": false
+    },
+    {
+      "family": "Arial Narrow",
+      "url": "assets/fonts/ArialNarrow.woff2",
+      "format": "woff2",
+      "exists": true
+    },
+    {
+      "family": "Book Antiqua",
+      "url": "assets/fonts/BookAntiqua.woff2",
+      "format": "woff2",
+      "exists": true
+    }
+  ],
+  "runtime_hooks": {
+    "window.DailyIndicatorsTemplate": 1,
+    "window.applyDailyIndicatorsData": 1,
+    "collectState": 3,
+    "editable-block-count": 1,
+    "semantic-field-count": 41,
+    "table-field-count": 787,
+    "table-cell-count": 821,
+    "block-id-count": 817
+  },
+  "field_summary": {
+    "total": 817,
+    "semantic_fields": 41,
+    "table_fields": 791,
+    "block_ids": 817,
+    "table_ids": {
+      "title_box": 1,
+      "stock_summary": 7,
+      "stock_table": 71,
+      "fx_summary": 7,
+      "fx_table": 71,
+      "bond_summary": 15,
+      "bond_table": 62,
+      "commodity_summary": 14,
+      "commodity_table": 71,
+      "reference_header": 2,
+      "reference_macro_forecast_table": 102,
+      "reference_monthly_table": 175,
+      "reference_fiscal_table": 193
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "subject": "today_major_economy/ is the oracle/reference target",
+  "description": "today_major_economy/ is the oracle/reference target",
+  "status": "pending",
+  "owner": "worker-2",
+  "role": "team-executor",
+  "id": "4",
+  "depends_on": [],
+  "version": 1,
+  "created_at": "2026-03-22T08:36:50.917Z"
+}

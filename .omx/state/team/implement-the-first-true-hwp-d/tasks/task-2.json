@@ -1,0 +1,11 @@
+{
+  "subject": "the pipeline must generate the final editable HTML from extracted structure",
+  "description": "the pipeline must generate the final editable HTML from extracted structure",
+  "status": "pending",
+  "owner": "worker-1",
+  "role": "team-executor",
+  "id": "2",
+  "depends_on": [],
+  "version": 1,
+  "created_at": "2026-03-22T08:36:50.914Z"
+}

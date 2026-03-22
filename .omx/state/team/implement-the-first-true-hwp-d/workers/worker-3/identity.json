@@ -1,0 +1,18 @@
+{
+  "name": "worker-3",
+  "index": 3,
+  "role": "team-executor",
+  "worker_cli": "codex",
+  "assigned_tasks": [
+    "6",
+    "7",
+    "8",
+    "11",
+    "15",
+    "19",
+    "21"
+  ],
+  "working_dir": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness",
+  "team_state_root": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/.omx/state",
+  "pid": 7260
+}

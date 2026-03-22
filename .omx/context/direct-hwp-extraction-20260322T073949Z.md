@@ -1,0 +1,23 @@
+# Context Snapshot
+- task statement: Build the first true direct-HWP extraction pipeline for the sample `260121 일일 주요경제지표.hwp`.
+- desired outcome: Replace bootstrap reference-copy generation with an extraction-driven path that reads the HWP, produces IR, renders editable HTML, and keeps the existing harness as the judge.
+- known facts/evidence:
+  - final target is direct HWP extraction
+  - `today_major_economy/` is the oracle/reference target, not the intended long-term generation method
+  - current harness baseline exists and can run the sample pipeline truthfully
+  - current green baseline run is `harness/artifacts/260121-major-economy/runs/20260322T071228Z`
+  - existing scripts currently support harness execution and runtime verification, but prior generation was bootstrap reference-runtime reuse
+- constraints:
+  - keep scope to the single sample HWP
+  - do not widen into generic multi-format support yet
+  - preserve editability, binding structure, runtime contract verification, and run artifact reporting
+  - keep diffs tight and reversible
+- unknowns/open questions:
+  - what exact direct-HWP extraction path is most practical in the current environment
+  - whether the first milestone should extract all semantics or begin with structural parity and coverage reporting
+- likely codebase touchpoints:
+  - `260121 일일 주요경제지표.hwp`
+  - `today_major_economy/`
+  - `scripts/`
+  - `harness/`
+  - `.omx/plans/direct-extraction-addendum.md`

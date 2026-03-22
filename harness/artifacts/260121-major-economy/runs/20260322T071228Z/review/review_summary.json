@@ -1,0 +1,15 @@
+{
+  "run_id": "20260322T071228Z",
+  "review_status": "conversion-only / review-blocked",
+  "capture_assets_found": false,
+  "pipeline_passed": null,
+  "acceptance_ready": null,
+  "runtime_contract_passed": true,
+  "reference_immutable": true,
+  "paths": {
+    "source": "harness/artifacts/260121-major-economy/runs/20260322T071228Z/source",
+    "reference": "harness/artifacts/260121-major-economy/runs/20260322T071228Z/reference",
+    "generated": "harness/artifacts/260121-major-economy/runs/20260322T071228Z/generated",
+    "metadata": "harness/artifacts/260121-major-economy/runs/20260322T071228Z/metadata"
+  }
+}

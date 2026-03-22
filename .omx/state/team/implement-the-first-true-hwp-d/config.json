@@ -1,0 +1,55 @@
+{
+  "name": "implement-the-first-true-hwp-d",
+  "task": "Implement the first true HWP-direct-to-HTML pipeline for the sample 260121 일일 주요경제지표.hwp. Final goal: the original HWP must be directly parsed; the pipeline must generate the final editable HTML from extracted structure; the primary generation path must be HWP to IR to HTML, not reference-copy reuse. Current starting point: pyhwp/hwp5proc is installed and hwp5proc xml can parse the sample HWP; today_major_economy/ is the oracle/reference target; the harness must remain the evaluation loop. Required outcomes: add a stable extraction wrapper that runs pyhwp/hwp5proc from the pipeline; save the extracted output as a repo-managed intermediate artifact for the sample; define the first IR/schema for this sample; transform pyhwp XML/model output into that IR; implement the first renderer step that uses IR to generate editable HTML artifacts; ensure the generated output lands under harness/artifacts/.../generated/; preserve runtime contract verification and run artifact reporting; report structural coverage against the oracle (extracted_fields.json, semantic fields, table ids, cell mappings). Constraints: keep scope to the sample HWP only; do not widen into generic multi-format support yet; do not regress harness truthfulness; preserve editability and binding structure; keep diffs tight and reversible; if full HTML generation cannot be completed in one pass, the minimum acceptable midpoint is repo-managed extraction artifact plus IR plus renderer entrypoint stub wired into the pipeline. Definition of done: the pipeline directly parses the sample HWP; a repo-managed extraction artifact exists; a first IR exists; generated HTML is produced from IR, not from reference-copy reuse; a fresh run artifact is created and verifiable through the harness.",
+  "agent_type": "team-executor",
+  "worker_launch_mode": "prompt",
+  "lifecycle_profile": "linked_ralph",
+  "worker_count": 3,
+  "max_workers": 20,
+  "workers": [
+    {
+      "name": "worker-1",
+      "index": 1,
+      "role": "team-executor",
+      "assigned_tasks": [],
+      "pid": 7258,
+      "worker_cli": "codex",
+      "working_dir": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness",
+      "team_state_root": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/.omx/state"
+    },
+    {
+      "name": "worker-2",
+      "index": 2,
+      "role": "team-executor",
+      "assigned_tasks": [],
+      "pid": 7259,
+      "worker_cli": "codex",
+      "working_dir": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness",
+      "team_state_root": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/.omx/state"
+    },
+    {
+      "name": "worker-3",
+      "index": 3,
+      "role": "team-executor",
+      "assigned_tasks": [],
+      "pid": 7260,
+      "worker_cli": "codex",
+      "working_dir": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness",
+      "team_state_root": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/.omx/state"
+    }
+  ],
+  "created_at": "2026-03-22T08:36:50.910Z",
+  "tmux_session": "prompt-implement-the-first-true-hwp-d",
+  "next_task_id": 1,
+  "leader_cwd": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness",
+  "team_state_root": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/.omx/state",
+  "workspace_mode": "single",
+  "worktree_mode": {
+    "enabled": false
+  },
+  "leader_pane_id": null,
+  "hud_pane_id": null,
+  "resize_hook_name": null,
+  "resize_hook_target": null,
+  "next_worker_index": 4
+}

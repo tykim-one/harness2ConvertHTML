@@ -1,0 +1,1 @@
+- [ ] Define the acceptable source-capture contract for milestone 1: image/PDF screenshots supplied manually or produced externally, plus required naming/location under `harness/artifacts/260121-major-economy/runs/<run-id>/`.

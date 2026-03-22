@@ -1,0 +1,25 @@
+{
+  "tool": "hwp5proc",
+  "command": [
+    "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/.venv-pyhwp/bin/hwp5proc",
+    "xml",
+    "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/harness/artifacts/260121-major-economy/runs/20260322T085026Z/source/260121 일일 주요경제지표.hwp"
+  ],
+  "source_hwp": "harness/artifacts/260121-major-economy/runs/20260322T085026Z/source/260121 일일 주요경제지표.hwp",
+  "extracted_xml": "harness/artifacts/260121-major-economy/runs/20260322T085026Z/metadata/extracted_hwp.xml",
+  "stderr_log": "harness/artifacts/260121-major-economy/runs/20260322T085026Z/metadata/extract_hwp_xml.stderr.log",
+  "xml_size_bytes": 1338734,
+  "warning_count": 240,
+  "warnings_preview": [
+    "undefined UnderlineStyle value: 15",
+    "defined name/values: {'SOLID': UnderlineStyle.SOLID, 'DASHED': UnderlineStyle.DASHED, 'DOTTED': UnderlineStyle.DOTTED, 'DASH_DOT': UnderlineStyle.DASH_DOT, 'DASH_DOT_DOT': UnderlineStyle.DASH_DOT_DOT, 'LONG_DASHED': UnderlineStyle.LONG_DASHED, 'LARGE_DOTTED': UnderlineStyle.LARGE_DOTTED, 'DOUBLE': UnderlineStyle.DOUBLE, 'LOWER_WEIGHTED': UnderlineStyle.LOWER_WEIGHTED, 'UPPER_WEIGHTED': UnderlineStyle.UPPER_WEIGHTED, 'MIDDLE_WEIGHTED': UnderlineStyle.MIDDLE_WEIGHTED}",
+    "undefined UnderlineStyle value: 15",
+    "defined name/values: {'SOLID': UnderlineStyle.SOLID, 'DASHED': UnderlineStyle.DASHED, 'DOTTED': UnderlineStyle.DOTTED, 'DASH_DOT': UnderlineStyle.DASH_DOT, 'DASH_DOT_DOT': UnderlineStyle.DASH_DOT_DOT, 'LONG_DASHED': UnderlineStyle.LONG_DASHED, 'LARGE_DOTTED': UnderlineStyle.LARGE_DOTTED, 'DOUBLE': UnderlineStyle.DOUBLE, 'LOWER_WEIGHTED': UnderlineStyle.LOWER_WEIGHTED, 'UPPER_WEIGHTED': UnderlineStyle.UPPER_WEIGHTED, 'MIDDLE_WEIGHTED': UnderlineStyle.MIDDLE_WEIGHTED}",
+    "undefined UnderlineStyle value: 15",
+    "defined name/values: {'SOLID': UnderlineStyle.SOLID, 'DASHED': UnderlineStyle.DASHED, 'DOTTED': UnderlineStyle.DOTTED, 'DASH_DOT': UnderlineStyle.DASH_DOT, 'DASH_DOT_DOT': UnderlineStyle.DASH_DOT_DOT, 'LONG_DASHED': UnderlineStyle.LONG_DASHED, 'LARGE_DOTTED': UnderlineStyle.LARGE_DOTTED, 'DOUBLE': UnderlineStyle.DOUBLE, 'LOWER_WEIGHTED': UnderlineStyle.LOWER_WEIGHTED, 'UPPER_WEIGHTED': UnderlineStyle.UPPER_WEIGHTED, 'MIDDLE_WEIGHTED': UnderlineStyle.MIDDLE_WEIGHTED}",
+    "undefined UnderlineStyle value: 15",
+    "defined name/values: {'SOLID': UnderlineStyle.SOLID, 'DASHED': UnderlineStyle.DASHED, 'DOTTED': UnderlineStyle.DOTTED, 'DASH_DOT': UnderlineStyle.DASH_DOT, 'DASH_DOT_DOT': UnderlineStyle.DASH_DOT_DOT, 'LONG_DASHED': UnderlineStyle.LONG_DASHED, 'LARGE_DOTTED': UnderlineStyle.LARGE_DOTTED, 'DOUBLE': UnderlineStyle.DOUBLE, 'LOWER_WEIGHTED': UnderlineStyle.LOWER_WEIGHTED, 'UPPER_WEIGHTED': UnderlineStyle.UPPER_WEIGHTED, 'MIDDLE_WEIGHTED': UnderlineStyle.MIDDLE_WEIGHTED}",
+    "undefined UnderlineStyle value: 15",
+    "defined name/values: {'SOLID': UnderlineStyle.SOLID, 'DASHED': UnderlineStyle.DASHED, 'DOTTED': UnderlineStyle.DOTTED, 'DASH_DOT': UnderlineStyle.DASH_DOT, 'DASH_DOT_DOT': UnderlineStyle.DASH_DOT_DOT, 'LONG_DASHED': UnderlineStyle.LONG_DASHED, 'LARGE_DOTTED': UnderlineStyle.LARGE_DOTTED, 'DOUBLE': UnderlineStyle.DOUBLE, 'LOWER_WEIGHTED': UnderlineStyle.LOWER_WEIGHTED, 'UPPER_WEIGHTED': UnderlineStyle.UPPER_WEIGHTED, 'MIDDLE_WEIGHTED': UnderlineStyle.MIDDLE_WEIGHTED}"
+  ]
+}

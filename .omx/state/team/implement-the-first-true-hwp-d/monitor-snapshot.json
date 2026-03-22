@@ -1,0 +1,55 @@
+{
+  "taskStatusById": {
+    "1": "pending",
+    "2": "pending",
+    "3": "pending",
+    "4": "pending",
+    "5": "pending",
+    "6": "pending",
+    "7": "pending",
+    "8": "pending",
+    "9": "pending",
+    "10": "pending",
+    "11": "pending",
+    "12": "pending",
+    "13": "pending",
+    "14": "pending",
+    "15": "pending",
+    "16": "pending",
+    "17": "pending",
+    "18": "pending",
+    "19": "pending",
+    "20": "pending",
+    "21": "pending"
+  },
+  "workerAliveByName": {
+    "worker-1": false,
+    "worker-2": false,
+    "worker-3": false
+  },
+  "workerStateByName": {
+    "worker-1": "unknown",
+    "worker-2": "unknown",
+    "worker-3": "unknown"
+  },
+  "workerTurnCountByName": {
+    "worker-1": 0,
+    "worker-2": 0,
+    "worker-3": 0
+  },
+  "workerTaskIdByName": {
+    "worker-1": "",
+    "worker-2": "",
+    "worker-3": ""
+  },
+  "mailboxNotifiedByMessageId": {},
+  "completedEventTaskIds": {},
+  "integrationByWorker": {},
+  "monitorTimings": {
+    "list_tasks_ms": 0.94,
+    "worker_scan_ms": 0.27,
+    "mailbox_delivery_ms": 0.32,
+    "total_ms": 23.55,
+    "updated_at": "2026-03-22T08:37:17.085Z"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "current_phase": "failed",
+  "max_fix_attempts": 3,
+  "current_fix_attempt": 0,
+  "transitions": [
+    {
+      "from": "team-exec",
+      "to": "team-verify",
+      "at": "2026-03-22T08:37:17.063Z"
+    },
+    {
+      "from": "team-verify",
+      "to": "failed",
+      "at": "2026-03-22T08:37:17.063Z"
+    }
+  ],
+  "updated_at": "2026-03-22T08:37:17.063Z"
+}

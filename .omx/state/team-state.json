@@ -1,0 +1,71 @@
+{
+  "active": false,
+  "mode": "team",
+  "iteration": 0,
+  "max_iterations": 50,
+  "current_phase": "failed",
+  "task_description": "Implement the first true HWP-direct-to-HTML pipeline for the sample 260121 일일 주요경제지표.hwp. Final goal: the original HWP must be directly parsed; the pipeline must generate the final editable HTML from extracted structure; the primary generation path must be HWP to IR to HTML, not reference-copy reuse. Current starting point: pyhwp/hwp5proc is installed and hwp5proc xml can parse the sample HWP; today_major_economy/ is the oracle/reference target; the harness must remain the evaluation loop. Required outcomes: add a stable extraction wrapper that runs pyhwp/hwp5proc from the pipeline; save the extracted output as a repo-managed intermediate artifact for the sample; define the first IR/schema for this sample; transform pyhwp XML/model output into that IR; implement the first renderer step that uses IR to generate editable HTML artifacts; ensure the generated output lands under harness/artifacts/.../generated/; preserve runtime contract verification and run artifact reporting; report structural coverage against the oracle (extracted_fields.json, semantic fields, table ids, cell mappings). Constraints: keep scope to the sample HWP only; do not widen into generic multi-format support yet; do not regress harness truthfulness; preserve editability and binding structure; keep diffs tight and reversible; if full HTML generation cannot be completed in one pass, the minimum acceptable midpoint is repo-managed extraction artifact plus IR plus renderer entrypoint stub wired into the pipeline. Definition of done: the pipeline directly parses the sample HWP; a repo-managed extraction artifact exists; a first IR exists; generated HTML is produced from IR, not from reference-copy reuse; a fresh run artifact is created and verifiable through the harness.",
+  "started_at": "2026-03-22T08:36:50.973Z",
+  "linked_ralph": true,
+  "team_name": "implement-the-first-true-hwp-d",
+  "agent_count": 3,
+  "agent_types": "team-executor",
+  "available_agent_types": [
+    "analyst",
+    "api-reviewer",
+    "architect",
+    "build-fixer",
+    "code-reviewer",
+    "code-simplifier",
+    "critic",
+    "debugger",
+    "dependency-expert",
+    "designer",
+    "executor",
+    "explore",
+    "explore-harness",
+    "git-master",
+    "information-architect",
+    "performance-reviewer",
+    "planner",
+    "product-analyst",
+    "product-manager",
+    "qa-tester",
+    "quality-reviewer",
+    "quality-strategist",
+    "researcher",
+    "security-reviewer",
+    "sisyphus-lite",
+    "style-reviewer",
+    "team-executor",
+    "team-orchestrator",
+    "test-engineer",
+    "ux-researcher",
+    "verifier",
+    "vision",
+    "writer"
+  ],
+  "staffing_summary": "test-engineer x1 (primary delivery lane, medium reasoning); test-engineer x1 (verification + regression lane, medium reasoning); designer x1 (specialist support lane, high reasoning)",
+  "staffing_allocations": [
+    {
+      "role": "test-engineer",
+      "count": 1,
+      "reason": "primary delivery lane",
+      "reasoningEffort": "medium"
+    },
+    {
+      "role": "test-engineer",
+      "count": 1,
+      "reason": "verification + regression lane",
+      "reasoningEffort": "medium"
+    },
+    {
+      "role": "designer",
+      "count": 1,
+      "reason": "specialist support lane",
+      "reasoningEffort": "high"
+    }
+  ],
+  "completed_at": "2026-03-22T08:37:17.063Z",
+  "last_turn_at": "2026-03-22T13:49:50.128Z"
+}

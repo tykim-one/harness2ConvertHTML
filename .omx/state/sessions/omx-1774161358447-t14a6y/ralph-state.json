@@ -1,0 +1,18 @@
+{
+  "active": true,
+  "iteration": 35,
+  "max_iterations": 40,
+  "current_phase": "executing",
+  "started_at": "2026-03-22T00:00:00Z",
+  "task_description": "Implement milestone 1 harness skeleton for sample HWP using frozen reference-runtime reuse and produce the first runnable run artifact.",
+  "context_snapshot_path": ".omx/context/hwp-editable-html-harness-20260320T175911Z.md",
+  "prd_path": ".omx/plans/prd-hwp-editable-html-harness.md",
+  "test_spec_path": ".omx/plans/test-spec-hwp-editable-html-harness.md",
+  "notes": [
+    "Reused existing deep-interview context snapshot.",
+    "docs/shared/agent-tiers.md not present; using approved agent roster from PRD."
+  ],
+  "last_turn_at": "2026-03-22T13:49:50.069Z",
+  "max_iterations_auto_expand_count": 3,
+  "max_iterations_auto_expanded_at": "2026-03-22T09:03:56.601Z"
+}

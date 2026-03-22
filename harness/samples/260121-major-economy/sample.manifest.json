@@ -1,0 +1,52 @@
+{
+  "sample_id": "260121-major-economy",
+  "source": {
+    "hwp": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/260121 일일 주요경제지표.hwp"
+  },
+  "reference": {
+    "html": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/today_major_economy/daily_economic_indicators_fidelity_fit_headerfix.html",
+    "shared_css": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/today_major_economy/daily_economic_indicators_common.css",
+    "fit_css": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/today_major_economy/daily_economic_indicators_fidelity_fit_headerfix.css",
+    "fields": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/today_major_economy/extracted_fields.json",
+    "tokens": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/today_major_economy/daily_economic_indicators_fidelity_fit_headerfix_tokens.json",
+    "font_root": "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/today_major_economy/assets/fonts"
+  },
+  "artifacts": {
+    "runs_root": "harness/artifacts/260121-major-economy/runs"
+  },
+  "capture_pack": {
+    "source_dir": "harness/samples/260121-major-economy/capture",
+    "required_for_fidelity_review": true,
+    "missing_behavior": "conversion-only-review-blocked"
+  },
+  "runtime_contract": {
+    "required_hooks": [
+      "window.DailyIndicatorsTemplate",
+      "window.applyDailyIndicatorsData",
+      ".editable-block",
+      "data-semantic-field",
+      "data-table-field",
+      "data-table-id",
+      "data-cell-key",
+      "#runtime-font-faces",
+      "collectState"
+    ],
+    "export_state_shape": [
+      "meta",
+      "blocks",
+      "semanticFields",
+      "tables"
+    ],
+    "table_field_cell_key_rule": "tables.<tableId>.r<row>c<col> -> r<row>c<col>",
+    "allowed_mutations": [
+      "harness/artifacts/260121-major-economy/runs/<run-id>/reference/**",
+      "harness/artifacts/260121-major-economy/runs/<run-id>/generated/**",
+      "harness/artifacts/260121-major-economy/runs/<run-id>/review/**",
+      "harness/artifacts/260121-major-economy/runs/<run-id>/capture/**",
+      "payload/state json generated under run directories"
+    ],
+    "forbidden_mutations": [
+      "/Users/tykim/Documents/workspace/onelineai/convertToHtmlHarness/today_major_economy/**"
+    ]
+  }
+}

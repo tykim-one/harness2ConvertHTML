@@ -1,0 +1,44 @@
+{
+  "schema_version": "hwp-ir.schema.v1",
+  "description": "Minimum IR contract for the 260121-major-economy direct HWP extraction milestone.",
+  "top_level": [
+    "schema_version",
+    "schema_path",
+    "source",
+    "summary_info",
+    "doc_info",
+    "paragraphs",
+    "tables",
+    "coverage"
+  ],
+  "paragraph_fields": [
+    "section_index",
+    "paragraph_id",
+    "style_id",
+    "parashape_id",
+    "charshape_ids",
+    "text",
+    "in_table"
+  ],
+  "table_fields": [
+    "table_index",
+    "rows"
+  ],
+  "table_cell_fields": [
+    "row",
+    "col",
+    "rowspan",
+    "colspan",
+    "paragraph_ids",
+    "text"
+  ],
+  "coverage_fields": [
+    "reference_field_total",
+    "reference_field_values_matched",
+    "matched_field_labels",
+    "unmatched_field_labels",
+    "reference_table_ids",
+    "extracted_table_count",
+    "extracted_paragraph_count"
+  ]
+}

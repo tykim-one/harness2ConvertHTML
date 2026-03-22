@@ -1,0 +1,24 @@
+# Context Snapshot
+- task statement: Implement the first true HWP-direct-to-HTML pipeline for the sample `260121 일일 주요경제지표.hwp`.
+- desired outcome: The pipeline directly parses the sample HWP, writes a repo-managed intermediate extraction artifact and first IR, and generates editable HTML from IR under the harness run output.
+- known facts/evidence:
+  - final target is HWP -> IR -> editable HTML, not reference-copy reuse
+  - `today_major_economy/` is the oracle/reference target
+  - `pyhwp`/`hwp5proc` is installed in `.venv-pyhwp`
+  - `hwp5proc xml '260121 일일 주요경제지표.hwp'` succeeds locally and produces ~1.3MB XML output despite underline-style warnings
+  - current harness baseline exists and latest truthful baseline run is `harness/artifacts/260121-major-economy/runs/20260322T074054Z`
+- constraints:
+  - keep scope to the sample HWP only
+  - do not widen into generic multi-format support
+  - preserve editability, binding structure, runtime contract verification, and run artifact reporting
+  - keep diffs tight and reversible
+  - minimum acceptable midpoint is repo-managed extraction artifact + IR + renderer entrypoint stub wired into the pipeline if full HTML generation cannot complete in one pass
+- unknowns/open questions:
+  - whether pyhwp XML alone is sufficient for the first IR or whether models/json extraction is needed too
+  - how much oracle semantic labeling can be automated in the first pass
+- likely codebase touchpoints:
+  - `.venv-pyhwp/`
+  - `260121 일일 주요경제지표.hwp`
+  - `scripts/`
+  - `harness/`
+  - `today_major_economy/`

@@ -1,0 +1,26 @@
+{
+  "generation_mode": "ir-main-direct",
+  "main_generated_html": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/generated/daily_economic_indicators_fidelity_fit_headerfix.html",
+  "main_generated_payload": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/generated/generated_payload.json",
+  "main_generated_state_seed": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/generated/generated_state_seed.json",
+  "preview_html": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/generated/direct_hwp_extraction_preview.html",
+  "preview_payload": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/generated/direct_hwp_extraction_preview.json",
+  "oracle_resolution": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/metadata/oracle_runtime_resolution.json",
+  "traceability": {
+    "extracted_xml": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/metadata/extracted_hwp.xml",
+    "ir": "harness/artifacts/260121-major-economy/runs/20260322T133918Z/metadata/extracted_hwp_ir.json",
+    "renderer": "scripts/render_ir_to_html.py"
+  },
+  "oracle_coverage": {
+    "reference_field_total": 817,
+    "matched_field_count": 817,
+    "mismatch_count": 0,
+    "matched_semantic_field_count": 41,
+    "matched_table_field_count": 791
+  },
+  "oracle_mismatches_preview": [],
+  "remaining_reference_scaffolding": [
+    "Common/fitted CSS and font assets are still staged from the frozen reference bundle.",
+    "Oracle coverage currently uses today_major_economy/extracted_fields.json for mismatch reporting."
+  ]
+}

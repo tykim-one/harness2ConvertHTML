@@ -1,0 +1,30 @@
+[
+  {
+    "priority": "medium",
+    "category": "extractor-warnings",
+    "issue": "pyhwp emitted 240 extraction warnings",
+    "recommended_action": "Classify recurring pyhwp warnings and decide which require normalization or parser-specific cleanup.",
+    "evidence": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/metadata/extract_hwp_xml.stderr.log"
+  },
+  {
+    "priority": "medium",
+    "category": "reference-scaffolding",
+    "issue": "Common/fitted CSS and font assets are still staged from the frozen reference bundle.",
+    "recommended_action": "Track and reduce this scaffold once the direct path can carry the equivalent information or styling safely.",
+    "evidence": null
+  },
+  {
+    "priority": "medium",
+    "category": "reference-scaffolding",
+    "issue": "Oracle coverage currently uses today_major_economy/extracted_fields.json for mismatch reporting.",
+    "recommended_action": "Track and reduce this scaffold once the direct path can carry the equivalent information or styling safely.",
+    "evidence": null
+  },
+  {
+    "priority": "medium",
+    "category": "visual-acceptance",
+    "issue": "Final fidelity acceptance is blocked because capture assets are missing",
+    "recommended_action": "Add real source-document capture images so the harness can move from review-blocked to review-ready and start visual comparison.",
+    "evidence": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/review"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "request_id": "58e3deb7-9dc2-41de-9429-7932983f703c",
+    "kind": "inbox",
+    "team_name": "implement-the-first-true-hwp-d",
+    "to_worker": "worker-1",
+    "worker_index": 1,
+    "trigger_message": "Read .omx/state/team/implement-the-first-true-hwp-d/workers/worker-1/inbox.md, start work now, report concrete progress, then continue assigned work or next feasible task.",
+    "inbox_correlation_key": "startup:worker-1",
+    "transport_preference": "prompt_stdin",
+    "fallback_allowed": false,
+    "status": "notified",
+    "attempt_count": 1,
+    "created_at": "2026-03-22T08:36:50.954Z",
+    "updated_at": "2026-03-22T08:36:50.956Z",
+    "notified_at": "2026-03-22T08:36:50.956Z",
+    "last_reason": "prompt_stdin_sent"
+  },
+  {
+    "request_id": "6807b884-6a6e-4ab7-b019-b7e57f58c3ab",
+    "kind": "inbox",
+    "team_name": "implement-the-first-true-hwp-d",
+    "to_worker": "worker-2",
+    "worker_index": 2,
+    "trigger_message": "Read .omx/state/team/implement-the-first-true-hwp-d/workers/worker-2/inbox.md, start work now, report concrete progress, then continue assigned work or next feasible task.",
+    "inbox_correlation_key": "startup:worker-2",
+    "transport_preference": "prompt_stdin",
+    "fallback_allowed": false,
+    "status": "notified",
+    "attempt_count": 1,
+    "created_at": "2026-03-22T08:36:50.960Z",
+    "updated_at": "2026-03-22T08:36:50.963Z",
+    "notified_at": "2026-03-22T08:36:50.963Z",
+    "last_reason": "prompt_stdin_sent"
+  },
+  {
+    "request_id": "dc4e09ed-6441-4b2f-ad2d-380c00fb6907",
+    "kind": "inbox",
+    "team_name": "implement-the-first-true-hwp-d",
+    "to_worker": "worker-3",
+    "worker_index": 3,
+    "trigger_message": "Read .omx/state/team/implement-the-first-true-hwp-d/workers/worker-3/inbox.md, start work now, report concrete progress, then continue assigned work or next feasible task.",
+    "inbox_correlation_key": "startup:worker-3",
+    "transport_preference": "prompt_stdin",
+    "fallback_allowed": false,
+    "status": "notified",
+    "attempt_count": 1,
+    "created_at": "2026-03-22T08:36:50.967Z",
+    "updated_at": "2026-03-22T08:36:50.970Z",
+    "notified_at": "2026-03-22T08:36:50.970Z",
+    "last_reason": "prompt_stdin_sent"
+  }
+]

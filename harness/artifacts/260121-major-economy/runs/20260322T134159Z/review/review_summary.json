@@ -1,0 +1,73 @@
+{
+  "run_id": "20260322T134159Z",
+  "review_status": "conversion-only / review-blocked",
+  "capture_assets_found": false,
+  "pipeline_passed": true,
+  "acceptance_ready": false,
+  "runtime_contract_passed": true,
+  "runtime_generation_mode": "ir-main-direct",
+  "oracle_coverage": {
+    "reference_field_total": 817,
+    "matched_field_count": 817,
+    "mismatch_count": 0,
+    "matched_semantic_field_count": 41,
+    "matched_table_field_count": 791
+  },
+  "oracle_mismatches_preview": [],
+  "extraction_warning_count": 240,
+  "fallback_field_count": 0,
+  "remaining_reference_scaffolding": [
+    "Common/fitted CSS and font assets are still staged from the frozen reference bundle.",
+    "Oracle coverage currently uses today_major_economy/extracted_fields.json for mismatch reporting."
+  ],
+  "reference_immutable": true,
+  "direct_extraction_ready": true,
+  "ir_ready": true,
+  "main_generated_from_ir": true,
+  "next_upgrade_targets": [
+    {
+      "priority": "medium",
+      "category": "extractor-warnings",
+      "issue": "pyhwp emitted 240 extraction warnings",
+      "recommended_action": "Classify recurring pyhwp warnings and decide which require normalization or parser-specific cleanup.",
+      "evidence": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/metadata/extract_hwp_xml.stderr.log"
+    },
+    {
+      "priority": "medium",
+      "category": "reference-scaffolding",
+      "issue": "Common/fitted CSS and font assets are still staged from the frozen reference bundle.",
+      "recommended_action": "Track and reduce this scaffold once the direct path can carry the equivalent information or styling safely.",
+      "evidence": null
+    },
+    {
+      "priority": "medium",
+      "category": "reference-scaffolding",
+      "issue": "Oracle coverage currently uses today_major_economy/extracted_fields.json for mismatch reporting.",
+      "recommended_action": "Track and reduce this scaffold once the direct path can carry the equivalent information or styling safely.",
+      "evidence": null
+    },
+    {
+      "priority": "medium",
+      "category": "visual-acceptance",
+      "issue": "Final fidelity acceptance is blocked because capture assets are missing",
+      "recommended_action": "Add real source-document capture images so the harness can move from review-blocked to review-ready and start visual comparison.",
+      "evidence": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/review"
+    }
+  ],
+  "direct_outputs": {
+    "extracted_xml": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/metadata/extracted_hwp.xml",
+    "ir": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/metadata/extracted_hwp_ir.json",
+    "preview_html": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/direct_hwp_extraction_preview.html",
+    "preview_payload": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/direct_hwp_extraction_preview.json",
+    "main_generated_html": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/daily_economic_indicators_fidelity_fit_headerfix.html",
+    "main_generated_payload": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/generated_payload.json",
+    "main_generated_state_seed": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/generated_state_seed.json"
+  },
+  "upgrade_targets_path": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/review/upgrade_targets.json",
+  "paths": {
+    "source": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/source",
+    "reference": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/reference",
+    "generated": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated",
+    "metadata": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/metadata"
+  }
+}

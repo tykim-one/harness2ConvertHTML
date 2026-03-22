@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "generation_mode": "ir-main-direct",
+  "generated_from_ir": true,
+  "required_hooks": {
+    "window.DailyIndicatorsTemplate": true,
+    "window.applyDailyIndicatorsData": true,
+    ".editable-block": true,
+    "data-semantic-field": true,
+    "data-table-field": true,
+    "data-table-id": true,
+    "data-cell-key": true,
+    "#runtime-font-faces": true,
+    "collectState": true
+  },
+  "unresolved_mappings": [],
+  "payload_shape_ok": true,
+  "state_shape_ok": true,
+  "missing_fonts": [],
+  "capture_gate_ok": true,
+  "generated_html": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/daily_economic_indicators_fidelity_fit_headerfix.html",
+  "generated_payload": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/generated_payload.json",
+  "generated_state_seed": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/generated_state_seed.json",
+  "oracle_coverage": {
+    "reference_field_total": 817,
+    "matched_field_count": 817,
+    "mismatch_count": 0,
+    "matched_semantic_field_count": 41,
+    "matched_table_field_count": 791
+  },
+  "oracle_mismatches_preview": [],
+  "remaining_reference_scaffolding": [
+    "Common/fitted CSS and font assets are still staged from the frozen reference bundle.",
+    "Oracle coverage currently uses today_major_economy/extracted_fields.json for mismatch reporting."
+  ],
+  "traceability": {
+    "extracted_xml": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/metadata/extracted_hwp.xml",
+    "ir": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/metadata/extracted_hwp_ir.json",
+    "renderer": "scripts/render_ir_to_html.py"
+  }
+}

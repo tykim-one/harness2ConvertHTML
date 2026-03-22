@@ -1,0 +1,357 @@
+/* High-fidelity fit layer
+   - keeps shared/base styles in daily_economic_indicators_common.css
+   - centralizes dense-table and summary-bar tuning here
+*/
+
+:root {
+  --fi-summary-title-size: 14.2pt;
+  --fi-summary-main-size: 14.2pt;
+  --fi-summary-delta-size: 14.2pt;
+  --fi-summary-title-weight: 700;
+  --fi-summary-main-weight: 700;
+  --fi-summary-letter-spacing: -0.028em;
+  --fi-summary-cell-pad-x: 0.30mm;
+  --fi-summary-cell-pad-y: 0.26mm;
+  --fi-summary-row-height: 10.6mm;
+
+  --fi-market-header-size: 10.2pt;
+  --fi-market-label-size: 10.1pt;
+
+  --fi-dense-body-size: 8.35pt;
+  --fi-dense-header-size: 8.85pt;
+  --fi-dense-label-size: 8.85pt;
+  --fi-dense-note-size: 8.35pt;
+  --fi-dense-line-height: 1.00;
+  --fi-dense-letter-spacing: -0.045em;
+  --fi-dense-header-letter-spacing: -0.030em;
+  --fi-dense-label-letter-spacing: -0.028em;
+  --fi-dense-scale-x: 0.962;
+  --fi-dense-cell-pad-x: 0.18mm;
+  --fi-dense-cell-pad-y: 0.14mm;
+}
+
+/* 1) Summary bars */
+.table--stock_summary col:nth-child(1) { width: 21.150000% !important; }
+.table--stock_summary col:nth-child(2) { width: 11.175000% !important; }
+.table--stock_summary col:nth-child(3) { width: 12.418750% !important; }
+.table--stock_summary col:nth-child(4) { width: 13.662500% !important; }
+.table--stock_summary col:nth-child(5) { width: 14.912500% !important; }
+.table--stock_summary col:nth-child(6) { width: 11.781250% !important; }
+.table--stock_summary col:nth-child(7) { width: 14.900000% !important; }
+
+.table--fx_summary col:nth-child(1) { width: 13.800000% !important; }
+.table--fx_summary col:nth-child(2) { width: 10.800000% !important; }
+.table--fx_summary col:nth-child(3) { width: 15.600000% !important; }
+.table--fx_summary col:nth-child(4) { width: 21.400000% !important; }
+.table--fx_summary col:nth-child(5) { width: 10.800000% !important; }
+.table--fx_summary col:nth-child(6) { width: 14.800000% !important; }
+.table--fx_summary col:nth-child(7) { width: 12.800000% !important; }
+
+.table--commodity_summary col:nth-child(1) { width: 15.000000% !important; }
+.table--commodity_summary col:nth-child(2) { width: 11.500000% !important; }
+.table--commodity_summary col:nth-child(3) { width: 15.000000% !important; }
+.table--commodity_summary col:nth-child(4) { width: 10.500000% !important; }
+.table--commodity_summary col:nth-child(5) { width: 19.000000% !important; }
+.table--commodity_summary col:nth-child(6) { width: 17.000000% !important; }
+.table--commodity_summary col:nth-child(7) { width: 12.000000% !important; }
+
+.table--bond_summary col:nth-child(1) { width: 17.400000% !important; }
+.table--bond_summary col:nth-child(2) { width: 11.700000% !important; }
+.table--bond_summary col:nth-child(3) { width: 9.200000% !important; }
+.table--bond_summary col:nth-child(4) { width: 11.900000% !important; }
+.table--bond_summary col:nth-child(5) { width: 14.300000% !important; }
+.table--bond_summary col:nth-child(6) { width: 10.000000% !important; }
+.table--bond_summary col:nth-child(7) { width: 11.800000% !important; }
+.table--bond_summary col:nth-child(8) { width: 13.700000% !important; }
+
+.fi-table[data-table-id$="_summary"] td {
+  height: var(--fi-summary-row-height) !important;
+  padding-top: var(--fi-summary-cell-pad-y) !important;
+  padding-bottom: var(--fi-summary-cell-pad-y) !important;
+  padding-left: var(--fi-summary-cell-pad-x) !important;
+  padding-right: var(--fi-summary-cell-pad-x) !important;
+}
+
+.fi-table[data-table-id$="_summary"] p,
+.fi-table[data-table-id$="_summary"] p.parashape-54,
+.fi-table[data-table-id$="_summary"] p.parashape-56,
+.fi-table[data-table-id$="_summary"] p.parashape-31,
+.fi-table[data-table-id$="_summary"] p.parashape-32 {
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+  margin-left: 0 !important;
+  white-space: nowrap !important;
+  line-height: 1.00 !important;
+}
+
+.table--fx_summary .fi-summary-title span,
+.table--stock_summary .fi-summary-title span,
+.table--bond_summary .fi-summary-title span,
+.table--commodity_summary .fi-summary-title span {
+  font-size: var(--fi-summary-title-size) !important;
+  font-weight: var(--fi-summary-title-weight) !important;
+  letter-spacing: var(--fi-summary-letter-spacing) !important;
+}
+
+.table--fx_summary .fi-summary-label span,
+.table--fx_summary .fi-summary-value span,
+.table--fx_summary .fi-summary-delta span,
+.table--commodity_summary .fi-summary-label span,
+.table--commodity_summary .fi-summary-value span,
+.table--commodity_summary .fi-summary-delta span,
+.table--stock_summary .fi-summary-label span,
+.table--stock_summary .fi-summary-value span,
+.table--stock_summary .fi-summary-delta span,
+.table--bond_summary .fi-summary-label span,
+.table--bond_summary .fi-summary-value span,
+.table--bond_summary .fi-summary-delta span {
+  font-size: var(--fi-summary-main-size) !important;
+  font-weight: var(--fi-summary-main-weight) !important;
+  letter-spacing: var(--fi-summary-letter-spacing) !important;
+}
+
+.table--commodity_summary .fi-summary-cell,
+.table--fx_summary .fi-summary-cell,
+.table--stock_summary .fi-summary-cell,
+.table--bond_summary .fi-summary-cell {
+  white-space: nowrap !important;
+}
+
+/* 2) Standard market tables */
+.table--stock_table col:nth-child(1),
+.table--fx_table col:nth-child(1) { width: 21.300000% !important; }
+.table--bond_table col:nth-child(1) { width: 21.200000% !important; }
+.table--commodity_table col:nth-child(1) { width: 23.800000% !important; }
+
+.table--stock_table col:nth-child(n+2),
+.table--fx_table col:nth-child(n+2) { width: 9.837500% !important; }
+.table--bond_table col:nth-child(n+2) { width: 9.850000% !important; }
+.table--commodity_table col:nth-child(n+2) { width: 9.525000% !important; }
+
+.table--commodity_table .fi-first-col p {
+  white-space: normal !important;
+  word-break: keep-all !important;
+}
+
+.table--commodity_table .fi-row-1 .fi-first-col span,
+.table--commodity_table .fi-row-3 .fi-first-col span,
+.table--commodity_table .fi-row-4 .fi-first-col span,
+.table--commodity_table .fi-row-6 .fi-first-col span {
+  font-weight: 700 !important;
+}
+
+.table--commodity_table .fi-row-0 td,
+.table--stock_table .fi-row-0 td,
+.table--fx_table .fi-row-0 td,
+.table--bond_table .fi-row-0 td {
+  height: 7.15mm !important;
+}
+
+.table--commodity_table .fi-first-col span.charshape-114,
+.table--commodity_table .fi-first-col span.charshape-119,
+.table--commodity_table .fi-first-col span.charshape-120,
+.table--stock_table .fi-first-col span.charshape-12,
+.table--fx_table .fi-first-col span.charshape-12,
+.table--bond_table .fi-first-col span.charshape-12 {
+  font-size: var(--fi-market-label-size) !important;
+  font-weight: 700 !important;
+}
+
+/* 3) Dense appendix tables */
+.table--reference_monthly_table col:nth-child(1) { width: 18.000000% !important; }
+.table--reference_monthly_table col:nth-child(n+2) { width: 5.466667% !important; }
+
+.table--reference_macro_forecast_table col:nth-child(1) { width: 14.000000% !important; }
+.table--reference_macro_forecast_table col:nth-child(n+2) { width: 5.733333% !important; }
+
+.table--reference_fiscal_table col:nth-child(1) { width: 18.400000% !important; }
+.table--reference_fiscal_table col:nth-child(n+2) { width: 5.828571% !important; }
+
+.table--reference_monthly_table td,
+.table--reference_macro_forecast_table td,
+.table--reference_fiscal_table td,
+.table--commodity_table td {
+  padding-top: var(--fi-dense-cell-pad-y) !important;
+  padding-bottom: var(--fi-dense-cell-pad-y) !important;
+  padding-left: var(--fi-dense-cell-pad-x) !important;
+  padding-right: var(--fi-dense-cell-pad-x) !important;
+}
+
+.table--reference_monthly_table p,
+.table--reference_macro_forecast_table p,
+.table--reference_fiscal_table p,
+.table--commodity_table p {
+  line-height: var(--fi-dense-line-height) !important;
+}
+
+.table--reference_monthly_table .fi-first-col p,
+.table--reference_macro_forecast_table .fi-first-col p,
+.table--reference_fiscal_table .fi-first-col p,
+.table--commodity_table .fi-first-col p {
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  letter-spacing: var(--fi-dense-label-letter-spacing) !important;
+}
+
+.table--reference_monthly_table .fi-first-col span.charshape-12,
+.table--reference_monthly_table .fi-first-col span.charshape-18,
+.table--reference_macro_forecast_table .fi-first-col span.charshape-12,
+.table--reference_macro_forecast_table .fi-first-col span.charshape-18,
+.table--reference_fiscal_table .fi-first-col span.charshape-12,
+.table--reference_fiscal_table .fi-first-col span.charshape-18,
+.table--commodity_table .fi-first-col span.charshape-114,
+.table--commodity_table .fi-first-col span.charshape-119,
+.table--commodity_table .fi-first-col span.charshape-120 {
+  font-family: var(--font-sans-stack) !important;
+  font-size: var(--fi-dense-label-size) !important;
+  letter-spacing: var(--fi-dense-label-letter-spacing) !important;
+}
+
+.table--reference_monthly_table .fi-first-col span.charshape-12,
+.table--reference_macro_forecast_table .fi-first-col span.charshape-12,
+.table--reference_fiscal_table .fi-first-col span.charshape-12,
+.table--commodity_table .fi-first-col span.charshape-114,
+.table--commodity_table .fi-first-col span.charshape-119,
+.table--commodity_table .fi-first-col span.charshape-120 {
+  font-weight: 700 !important;
+}
+
+.table--reference_monthly_table .fi-first-col .charshape-18,
+.table--reference_macro_forecast_table .fi-first-col .charshape-18,
+.table--reference_fiscal_table .fi-first-col .charshape-18 {
+  font-size: var(--fi-dense-note-size) !important;
+  font-weight: 400 !important;
+}
+
+.table--reference_monthly_table .fi-header-cell span,
+.table--reference_macro_forecast_table .fi-header-cell span,
+.table--reference_fiscal_table .fi-header-cell span,
+.table--commodity_table .fi-header-cell span {
+  font-family: var(--font-sans-stack) !important;
+  font-size: var(--fi-dense-header-size) !important;
+  font-weight: 700 !important;
+  letter-spacing: var(--fi-dense-header-letter-spacing) !important;
+}
+
+.table--reference_monthly_table .fi-num-cell,
+.table--reference_monthly_table .fi-num-cell p,
+.table--reference_monthly_table .fi-num-cell span,
+.table--reference_macro_forecast_table .fi-num-cell,
+.table--reference_macro_forecast_table .fi-num-cell p,
+.table--reference_macro_forecast_table .fi-num-cell span,
+.table--reference_fiscal_table .fi-num-cell,
+.table--reference_fiscal_table .fi-num-cell p,
+.table--reference_fiscal_table .fi-num-cell span,
+.table--commodity_table .fi-num-cell,
+.table--commodity_table .fi-num-cell p,
+.table--commodity_table .fi-num-cell span {
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+.table--reference_monthly_table .fi-num-cell span,
+.table--reference_macro_forecast_table .fi-num-cell span,
+.table--reference_fiscal_table .fi-num-cell span,
+.table--commodity_table .fi-num-cell span {
+  font-family: var(--font-sans-stack) !important;
+  font-size: var(--fi-dense-body-size) !important;
+  font-weight: 400 !important;
+  letter-spacing: var(--fi-dense-letter-spacing) !important;
+  font-variant-numeric: tabular-nums lining-nums !important;
+  font-feature-settings: "tnum" 1, "lnum" 1 !important;
+  display: inline-block !important;
+  transform: scaleX(var(--fi-dense-scale-x));
+  transform-origin: center center;
+}
+
+.table--reference_monthly_table .fi-emphasis-col span,
+.table--reference_macro_forecast_table .fi-emphasis-col span,
+.table--reference_fiscal_table .fi-emphasis-col span,
+.table--commodity_table .fi-emphasis-col span {
+  font-weight: 700 !important;
+}
+
+.table--reference_monthly_table .fi-first-col,
+.table--reference_macro_forecast_table .fi-first-col,
+.table--reference_fiscal_table .fi-first-col,
+.table--commodity_table .fi-first-col {
+  overflow: hidden;
+}
+
+/* 4) Header / body text fine tuning */
+p[data-semantic-field="header.title"] {
+  text-align: center !important;
+  line-height: 1.0 !important;
+}
+
+p[data-semantic-field="header.team"] {
+  text-align: right !important;
+  line-height: 1.0 !important;
+}
+
+p[data-semantic-field="header.notice"],
+p[data-semantic-field$="comment.main"],
+p[data-semantic-field$="comment.subnote"] {
+  line-height: 1.16 !important;
+  letter-spacing: -0.01em;
+}
+
+
+/* 5) Market header fit tuning */
+:root {
+  --fi-market-header-fit-size: 9.10pt;
+  --fi-market-header-fit-letter-spacing: -0.050em;
+  --fi-market-header-fit-scale-x: 0.955;
+  --fi-market-header-fit-pad-x: 0.12mm;
+}
+
+.table--stock_table .fi-row-0 .fi-header-cell,
+.table--fx_table .fi-row-0 .fi-header-cell,
+.table--bond_table .fi-row-0 .fi-header-cell,
+.table--commodity_table .fi-row-0 .fi-header-cell {
+  padding-left: var(--fi-market-header-fit-pad-x) !important;
+  padding-right: var(--fi-market-header-fit-pad-x) !important;
+}
+
+.table--stock_table .fi-row-0 .fi-header-cell p,
+.table--fx_table .fi-row-0 .fi-header-cell p,
+.table--bond_table .fi-row-0 .fi-header-cell p,
+.table--commodity_table .fi-row-0 .fi-header-cell p {
+  white-space: nowrap !important;
+  line-height: 1 !important;
+}
+
+.table--stock_table .fi-row-0 .fi-header-cell span,
+.table--fx_table .fi-row-0 .fi-header-cell span,
+.table--bond_table .fi-row-0 .fi-header-cell span,
+.table--commodity_table .fi-row-0 .fi-header-cell span {
+  display: inline-block !important;
+  font-size: var(--fi-market-header-fit-size) !important;
+  letter-spacing: var(--fi-market-header-fit-letter-spacing) !important;
+  transform: scaleX(var(--fi-market-header-fit-scale-x));
+  transform-origin: center center;
+}
+
+/* Bond table needs slightly wider right-side columns for long headers */
+.table--bond_table col:nth-child(1) { width: 21.200000% !important; }
+.table--bond_table col:nth-child(2),
+.table--bond_table col:nth-child(3),
+.table--bond_table col:nth-child(4),
+.table--bond_table col:nth-child(5) { width: 9.300000% !important; }
+.table--bond_table col:nth-child(6),
+.table--bond_table col:nth-child(7),
+.table--bond_table col:nth-child(8),
+.table--bond_table col:nth-child(9) { width: 10.400000% !important; }
+
+.table--bond_table .fi-row-0 .fi-col-5 span,
+.table--bond_table .fi-row-0 .fi-col-6 span,
+.table--bond_table .fi-row-0 .fi-col-7 span,
+.table--bond_table .fi-row-0 .fi-col-8 span {
+  font-size: 8.85pt !important;
+  letter-spacing: -0.060em !important;
+  transform: scaleX(0.940) !important;
+}

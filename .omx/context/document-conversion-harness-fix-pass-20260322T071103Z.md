@@ -1,0 +1,24 @@
+# Context Snapshot
+- task statement: Fix the current milestone-1 harness kickoff for the HWP sample with a narrow follow-up pass.
+- desired outcome: Resolve the current runtime verification failure and make review-status truthfulness accurate without widening scope into full visual-fidelity tuning.
+- known facts/evidence:
+  - failing run exists at `harness/artifacts/260121-major-economy/runs/20260322T065802Z`
+  - `runtime_contract_verification.json` reports missing fonts `HumanMyeongjo.woff2` and `HCIPoppy.woff2`
+  - sample capture directory currently contains only `.gitkeep`
+  - run status currently reports `review-ready`, which is likely too permissive for capture gating
+  - reference immutability already passes for the failing run
+- constraints:
+  - keep scope narrow to missing-font handling and capture-gate false positives
+  - preserve non-destructive reference handling
+  - do not redesign the harness or widen into full fidelity tuning
+- unknowns/open questions:
+  - whether the missing fonts should be copied, omitted, or reclassified by contract
+  - whether any secondary runtime-verification gaps will appear after the first two issues are fixed
+- likely codebase touchpoints:
+  - `scripts/run_sample.py`
+  - `scripts/verify_runtime_contract.py`
+  - `scripts/build_editable_html.py`
+  - `scripts/freeze_reference_runtime.py`
+  - `harness/samples/260121-major-economy/sample.manifest.json`
+  - `harness/samples/260121-major-economy/capture/.gitkeep`
+  - `harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata/*.json`

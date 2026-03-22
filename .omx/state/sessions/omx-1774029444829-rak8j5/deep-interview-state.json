@@ -1,0 +1,112 @@
+{
+  "active": false,
+  "started_at": "2026-03-20T17:59:11Z",
+  "current_phase": "completed",
+  "task_description": "Clarify requirements for an agent and harness that convert HWP/DOCS/PDF-like documents into editable HTML using original captures plus extracted reference assets for high-fidelity UI reproduction.",
+  "interview_id": "38877DA5-8165-4C12-9E2A-3F85F9739BBF",
+  "profile": "standard",
+  "type": "brownfield",
+  "initial_idea": "hwp, docs, pdf 등의 문서를 Editable HTML로 변환하는 에이전트 및 하네스 구성. 원본 UI와 최대한 동기화하기 위해 원본 파일을 먼저 캡처하고 해당 캡처본과 원본파일을 레퍼런스로 하여 HTML로 변환. 샘플 원본은 '260121 일일 주요경제지표.hwp', reference는 today_major_economy/ 경로 산출물.",
+  "rounds": [
+    {
+      "round": 1,
+      "target_dimension": "Outcome Clarity",
+      "question": "첫 번째 마일스톤의 '완료'를 한 문장으로 정의해 주세요: 샘플 HWP 1건의 end-to-end 재현이 우선인지, 범용 변환 하네스의 뼈대가 우선인지?",
+      "answer_summary": "First milestone prioritizes end-to-end reproduction of a single sample HWP into nearly identical editable HTML. User will provide iterative review feedback. Longer-term goal is to encode the conversation and implementation process into a harness/skill/agent that evolves into a document conversion system.",
+      "scores": {
+        "intent": 0.88,
+        "outcome": 0.9,
+        "scope": 0.7,
+        "constraints": 0.45,
+        "success": 0.55,
+        "context": 0.75
+      },
+      "ambiguity": 0.2625,
+      "readiness_gates": {
+        "non_goals_explicit": false,
+        "decision_boundaries_explicit": false
+      },
+      "next_focus": "Non-goals / Scope boundaries"
+    },
+    {
+      "round": 2,
+      "target_dimension": "Non-goals / Scope",
+      "question": "첫 마일스톤 v1에서 '명시적으로 하지 않을 것'을 2~4개만 정해 주세요.",
+      "answer_summary": "User does not want to declare hard non-goals; interpreted as no predefined exclusions for v1.",
+      "scores": {
+        "intent": 0.88,
+        "outcome": 0.9,
+        "scope": 0.78,
+        "constraints": 0.45,
+        "success": 0.55,
+        "context": 0.75
+      },
+      "ambiguity": 0.2465,
+      "readiness_gates": {
+        "non_goals_explicit": true,
+        "decision_boundaries_explicit": false
+      },
+      "next_focus": "Decision boundaries / autonomy"
+    },
+    {
+      "round": 3,
+      "target_dimension": "Decision Boundaries",
+      "question": "작업 중 선택이 필요할 때 샘플 1건의 원본 UI 싱크 달성을 최우선으로 두고 HTML 구조 방식, 중간 산출물 형식, 캡처/비교 방식, 하네스 기록 포맷은 별도 확인 없이 자율 결정해도 되는지?",
+      "answer_summary": "User allows autonomous decisions on implementation approach, intermediate artifact formats, capture/comparison methods, and harness record format, as long as the final result is good.",
+      "scores": {
+        "intent": 0.9,
+        "outcome": 0.9,
+        "scope": 0.8,
+        "constraints": 0.78,
+        "success": 0.58,
+        "context": 0.75
+      },
+      "ambiguity": 0.19299999999999995,
+      "readiness_gates": {
+        "non_goals_explicit": true,
+        "decision_boundaries_explicit": true
+      },
+      "next_focus": "Success criteria"
+    }
+  ],
+  "current_ambiguity": 0.179,
+  "threshold": 0.2,
+  "max_rounds": 12,
+  "challenge_modes_used": [],
+  "codebase_context": {
+    "workspace_shape": "reference-artifact workspace",
+    "source_document": "260121 일일 주요경제지표.hwp",
+    "reference_dir": "today_major_economy/",
+    "facts": [
+      "reference HTML/CSS/assets exist",
+      "extracted_fields.json provides semantic/table mappings",
+      "no screenshot reference artifacts found yet"
+    ]
+  },
+  "current_stage": "completed",
+  "current_focus": "handoff",
+  "context_snapshot_path": ".omx/context/hwp-editable-html-harness-20260320T175911Z.md",
+  "readiness_gates": {
+    "non_goals_explicit": true,
+    "decision_boundaries_explicit": true
+  },
+  "latest_breakdown": {
+    "intent": 0.9,
+    "outcome": 0.92,
+    "scope": 0.8,
+    "constraints": 0.8,
+    "success": 0.82,
+    "context": 0.78
+  },
+  "completed_at": "2026-03-21T03:30:16Z",
+  "transcript_path": ".omx/interviews/hwp-editable-html-harness-20260321T033016Z.md",
+  "spec_path": ".omx/specs/deep-interview-hwp-editable-html-harness.md",
+  "handoff": {
+    "recommended": "$ralplan",
+    "alternatives": [
+      "$autopilot",
+      "$ralph",
+      "$team"
+    ]
+  }
+}

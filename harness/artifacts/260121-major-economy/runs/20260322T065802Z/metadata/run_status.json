@@ -1,0 +1,26 @@
+{
+  "run_id": "20260322T065802Z",
+  "sample_id": "260121-major-economy",
+  "capture_assets_found": true,
+  "capture_file_count": 1,
+  "review_status": "review-ready",
+  "paths": {
+    "run_dir": "harness/artifacts/260121-major-economy/runs/20260322T065802Z",
+    "metadata_dir": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata",
+    "source_dir": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/source",
+    "reference_dir": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/reference",
+    "generated_dir": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/generated",
+    "review_dir": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/review"
+  },
+  "reference_immutable_passed": true,
+  "runtime_contract_passed": false,
+  "reports": {
+    "freeze": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata/freeze_reference_runtime.json",
+    "metadata": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata/reference_metadata.json",
+    "build": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata/build_editable_html.json",
+    "runtime_verification": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata/runtime_contract_verification.json",
+    "reference_immutability": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata/reference_immutability.json",
+    "review_summary": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/review/review_summary.json"
+  },
+  "overall_passed": false
+}

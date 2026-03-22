@@ -1,0 +1,13 @@
+{
+  "run_id": "20260322T065802Z",
+  "review_status": "review-ready",
+  "capture_assets_found": true,
+  "runtime_contract_passed": false,
+  "reference_immutable": true,
+  "paths": {
+    "source": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/source",
+    "reference": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/reference",
+    "generated": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/generated",
+    "metadata": "harness/artifacts/260121-major-economy/runs/20260322T065802Z/metadata"
+  }
+}

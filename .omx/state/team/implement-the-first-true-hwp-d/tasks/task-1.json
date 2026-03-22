@@ -1,0 +1,11 @@
+{
+  "subject": "Implement the first true HWP-direct-to-HTML pipeline for the sample 260121 일일 주요",
+  "description": "Implement the first true HWP-direct-to-HTML pipeline for the sample 260121 일일 주요경제지표.hwp. Final goal: the original HWP must be directly parsed",
+  "status": "pending",
+  "owner": "worker-1",
+  "role": "team-executor",
+  "id": "1",
+  "depends_on": [],
+  "version": 1,
+  "created_at": "2026-03-22T08:36:50.912Z"
+}

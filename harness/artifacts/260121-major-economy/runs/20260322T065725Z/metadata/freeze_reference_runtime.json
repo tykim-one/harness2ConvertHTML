@@ -1,0 +1,14 @@
+{
+  "run_dir": "harness/artifacts/260121-major-economy/runs/20260322T065725Z",
+  "source_dir": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/source",
+  "reference_dir": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/reference",
+  "copied_files": {
+    "source_hwp": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/source/260121 일일 주요경제지표.hwp",
+    "html": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/reference/daily_economic_indicators_fidelity_fit_headerfix.html",
+    "shared_css": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/reference/daily_economic_indicators_common.css",
+    "fit_css": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/reference/daily_economic_indicators_fidelity_fit_headerfix.css",
+    "fields": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/reference/extracted_fields.json",
+    "tokens": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/reference/daily_economic_indicators_fidelity_fit_headerfix_tokens.json",
+    "assets_root": "harness/artifacts/260121-major-economy/runs/20260322T065725Z/reference/assets"
+  }
+}

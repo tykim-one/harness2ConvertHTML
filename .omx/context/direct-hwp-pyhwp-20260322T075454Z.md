@@ -1,0 +1,25 @@
+# Context Snapshot
+- task statement: Implement a pyhwp/hwp5proc-based direct-HWP extraction path for the sample `260121 일일 주요경제지표.hwp`.
+- desired outcome: Build the first true HWP -> IR -> editable HTML path for the sample using pyhwp/hwp5proc as the chosen extraction foundation, while keeping the harness as the judge.
+- known facts/evidence:
+  - final target is direct HWP extraction
+  - `today_major_economy/` is the oracle/reference target
+  - the sample file is legacy OLE `.hwp`
+  - current harness baseline exists and latest truthful baseline run is `harness/artifacts/260121-major-economy/runs/20260322T074054Z`
+  - local environment currently lacks direct HWP extraction tooling such as `hwp5txt`, `hwp5html`, `soffice`
+  - Python-first implementation surface exists under `scripts/`
+  - pyhwp/hwp5proc has been selected as the extraction foundation for this execution attempt
+- constraints:
+  - keep scope to the single sample HWP
+  - do not widen into generic multi-format support yet
+  - preserve editability, binding structure, runtime contract verification, and run artifact reporting
+  - if pyhwp setup blocks progress, report the exact blocker and minimum setup step needed rather than widening scope
+- unknowns/open questions:
+  - whether pyhwp can be installed and run in the current environment without extra setup
+  - what minimum IR/schema is sufficient for the first extraction-driven milestone
+- likely codebase touchpoints:
+  - `260121 일일 주요경제지표.hwp`
+  - `today_major_economy/`
+  - `scripts/`
+  - `harness/`
+  - `.omx/plans/direct-extraction-addendum.md`

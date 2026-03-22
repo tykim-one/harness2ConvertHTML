@@ -1,0 +1,35 @@
+{
+  "version": "headerfix-v1",
+  "description": "Market-table header overflow tuning for bond/stock/fx/commodity tables",
+  "tokens": {
+    "marketHeader": {
+      "fontSizePt": 9.1,
+      "letterSpacingEm": -0.05,
+      "scaleX": 0.955,
+      "cellPadXmm": 0.12
+    },
+    "bondTable": {
+      "colWidthsPercent": [
+        21.2,
+        9.3,
+        9.3,
+        9.3,
+        9.3,
+        10.4,
+        10.4,
+        10.4,
+        10.4
+      ],
+      "tightColumns": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "tightFontSizePt": 8.85,
+      "tightLetterSpacingEm": -0.06,
+      "tightScaleX": 0.94
+    }
+  },
+  "managedIn": "daily_economic_indicators_fidelity_fit_headerfix.css"
+}

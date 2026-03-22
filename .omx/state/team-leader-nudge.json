@@ -1,0 +1,14 @@
+{
+  "last_nudged_by_team": {},
+  "last_idle_nudged_by_team": {},
+  "progress_by_team": {
+    "implement-the-first-true-hwp-d": {
+      "signature": "{\"tasks\":[{\"id\":\"1\",\"owner\":\"worker-1\",\"status\":\"pending\"},{\"id\":\"10\",\"owner\":\"worker-2\",\"status\":\"pending\"},{\"id\":\"11\",\"owner\":\"worker-3\",\"status\":\"pending\"},{\"id\":\"12\",\"owner\":\"worker-2\",\"status\":\"pending\"},{\"id\":\"13\",\"owner\":\"worker-2\",\"status\":\"pending\"},{\"id\":\"14\",\"owner\":\"worker-2\",\"status\":\"pending\"},{\"id\":\"15\",\"owner\":\"worker-3\",\"status\":\"pending\"},{\"id\":\"16\",\"owner\":\"worker-2\",\"status\":\"pending\"},{\"id\":\"17\",\"owner\":\"worker-1\",\"status\":\"pending\"},{\"id\":\"18\",\"owner\":\"worker-1\",\"status\":\"pending\"},{\"id\":\"19\",\"owner\":\"worker-3\",\"status\":\"pending\"},{\"id\":\"2\",\"owner\":\"worker-1\",\"status\":\"pending\"},{\"id\":\"20\",\"owner\":\"worker-1\",\"status\":\"pending\"},{\"id\":\"21\",\"owner\":\"worker-3\",\"status\":\"pending\"},{\"id\":\"3\",\"owner\":\"worker-1\",\"status\":\"pending\"},{\"id\":\"4\",\"owner\":\"worker-2\",\"status\":\"pending\"},{\"id\":\"5\",\"owner\":\"worker-1\",\"status\":\"pending\"},{\"id\":\"6\",\"owner\":\"worker-3\",\"status\":\"pending\"},{\"id\":\"7\",\"owner\":\"worker-3\",\"status\":\"pending\"},{\"id\":\"8\",\"owner\":\"worker-3\",\"status\":\"pending\"},{\"id\":\"9\",\"owner\":\"worker-1\",\"status\":\"pending\"}],\"workers\":[{\"worker\":\"worker-1\",\"state\":\"unknown\",\"current_task_id\":\"\",\"status_missing\":true,\"turn_count\":null,\"heartbeat_missing\":true},{\"worker\":\"worker-2\",\"state\":\"unknown\",\"current_task_id\":\"\",\"status_missing\":true,\"turn_count\":null,\"heartbeat_missing\":true},{\"worker\":\"worker-3\",\"state\":\"unknown\",\"current_task_id\":\"\",\"status_missing\":true,\"turn_count\":null,\"heartbeat_missing\":true}]}",
+      "last_progress_at": "2026-03-22T08:36:51.022Z",
+      "observed_at": "2026-03-22T13:49:50.128Z",
+      "missing_signal_workers": 3,
+      "work_remaining": true,
+      "leader_action_state": "still_actionable"
+    }
+  }
+}

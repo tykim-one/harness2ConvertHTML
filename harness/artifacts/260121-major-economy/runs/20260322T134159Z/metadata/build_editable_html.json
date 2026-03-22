@@ -1,0 +1,10 @@
+{
+  "generated_dir": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated",
+  "generated_html": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/daily_economic_indicators_fidelity_fit_headerfix.html",
+  "generated_payload": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/generated_payload.json",
+  "generated_state_seed": "harness/artifacts/260121-major-economy/runs/20260322T134159Z/generated/generated_state_seed.json",
+  "generation_mode": "ir-main",
+  "derived_field_count": 817,
+  "fallback_field_count": 0,
+  "fallback_labels_preview": []
+}
